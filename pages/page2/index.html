@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collapsible Sidebar</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
+
+  <div class="sidebar" id="sidebar">
+    <div class="menu-icon" id="menu-toggle">
+      <img src="./assets/imgs/menu.png" alt="Menu Icon">
+    </div>
+
+    <div class="menu-items">
+      <a href="./index.html" class="menu-btn">
+        <img src="./assets/imgs/home.png" class="icon" alt="Home Icon">
+        <span class="text">Home</span>
+      </a>
+
+      <div class="dropdown">
+        <button class="menu-btn" id="patients-btn"> 
+          <img src="./assets/imgs/patient.png" class="icon" alt="Patients Icon">
+          <span class="text">My Patients</span>
+        </button>
+        <div class="dropdown-content" id="patients-dropdown">
+          <a href="../patient 1/index.html" class="patient-btn">Patient 1</a>
+          <a href="patient2.html" class="patient-btn">Patient 2</a>
+        </div>
+      </div>
+
+      <a href="../inbox/message1.html" class="menu-btn">
+        <img src="./assets/imgs/inbox.png" class="icon" alt="Inbox Icon">
+        <span class="text">Inbox</span>
+      </a>
+
+      <a href="schedule.html" class="menu-btn">
+        <img src="./assets/imgs/calendar.png" class="icon" alt="Schedule Icon">
+        <span class="text">Schedule</span>
+      </a>
+
+      <a href="tasks.html" class="menu-btn">
+        <img src="./assets/imgs/task.png" class="icon" alt="Tasks Icon">
+        <span class="text">Tasks</span>
+      </a>
+
+      <a href="settings.html" class="menu-btn">
+        <img src="./assets/imgs/settings.png" class="icon" alt="Settings Icon">
+        <span class="text">Settings</span>
+      </a>
+    </div>
+
+    <a href="logout.html" class="logout-btn">
+      <img src="./assets/imgs/logout.png" class="icon" alt="Logout Icon">
+      <span class="text">Logout</span>
+    </a>
+  </div>
+
+  <div class="content">
+    <div class="about-us">
+      <img src="./assets/imgs/feu.png" alt="About Us Image" class="section-image">
+      <p>Tams E-Health is dedicated to providing comprehensive and secure electronic health records.</p>
+      <!-- "About Us" text as a button -->
+      <a href="../about us/index.html" class="section-btn">About Us</a>
+    </div>
+    <div class="learn-more">
+      <img src="./assets/imgs/consent.png" alt="Learn More Image" class="section-image">
+      <p>Explore how Tams E-Health enhances healthcare services.</p>
+      <!-- "Learn More" text as a button -->
+      <a href="../learn more/index.html" class="section-btn">Learn More</a>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

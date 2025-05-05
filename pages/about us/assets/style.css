@@ -1,0 +1,344 @@
+/* General Body and Layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #f1f5f9;
+    background-image: url('../../../assets/imgs/a648ca9a-e5cd-4b33-bd6c-148a00f7aac3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    background-size: 2225px;
+}
+
+/* Dark Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2b3d1f; /* Dark color for the sidebar */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 20px; /* Add space between menu items */
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+    width: 70px;
+}
+
+.sidebar.collapsed .menu-btn .text,
+.sidebar.collapsed .dropdown-content {
+    display: none; /* Hide text and dropdown content when collapsed */
+}
+
+.sidebar.collapsed .menu-btn {
+    justify-content: center;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    margin-left: 25px;
+    padding: 8px;
+    gap: 10px; /* Space between each button */
+    background-color: #2b3d1f; /* Match sidebar background */
+    border-radius: 6px;
+}
+
+/* Make each patient a separate button */
+.patient-btn {
+    background-color: #fbbf24;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px; /* Padding for spacing */
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.3s ease;
+    margin-bottom: 10px; /* Space between patient buttons */
+}
+
+.patient-btn:hover {
+    background-color: #facc15;
+    transform: translateX(5px);
+}
+
+/* Hover Effects for Dropdown */
+.menu-btn:hover .dropdown-content {
+    display: flex; /* Show the dropdown content on hover */
+}
+
+/* Adjust Menu Button for Collapsed Sidebar */
+.sidebar.collapsed .menu-btn {
+    padding: 12px 15px; /* Keep padding same */
+    justify-content: center; /* Center the icon */
+    gap: 0; /* Remove gap between icon and text when collapsed */
+}
+
+/* Hide text for the 'My Patients' button in collapsed sidebar */
+.sidebar.collapsed #patients-btn .text {
+    display: none;
+}
+
+/* Keep dropdown content hidden when collapsed */
+.sidebar.collapsed .dropdown-content {
+    display: none; /* Ensure dropdown is hidden in collapsed state */
+}
+
+/* Adjust the icon size for consistency when collapsed */
+.sidebar.collapsed #patients-btn .icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Menu Button Styling */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    background-color: #fbbf24;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 60px; /* Add padding for better spacing */
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.3s ease;
+    gap: 15px; /* Add gap between the icon and text */
+    margin-bottom: 15px; /* Add space between each menu button */
+}
+
+.menu-btn:hover {
+    background-color: #facc15;
+    transform: translateX(5px);
+}
+
+.menu-btn .icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hover Effect for Menu Icon */
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* Dropdown Hover Effects */
+.dropdown-content a {
+    color: #2b3d1f;
+    text-decoration: none;
+    padding: 8px 0; /* Add padding to increase clickable area */
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    font-weight: bold;
+    background-color: #f0f0f0; /* Add background on hover */
+}
+
+/* Logout Button */
+.logout-btn {
+    margin-top: auto;
+    background-color: #556b2f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 15px; /* Add gap between the icon and text */
+}
+
+.logout-btn .icon {
+    margin-left: -3px;
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar.collapsed .logout-btn .text {
+    display: none;
+}
+
+/* Dropdown Button in Sidebar */
+#patients-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+#patients-btn .dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Position dropdown below the menu item */
+    left: 0;
+    background-color: #2b3d1f;
+    border-radius: 6px;
+    padding: 10px;
+    width: 180px;
+    z-index: 1;
+}
+
+/* Show dropdown content when the menu item is hovered */
+#patients-btn:hover .dropdown-content {
+    display: block;
+}
+
+/* About Us and Learn More Sections */
+.about-us, .learn-more {
+    width: 50%;
+}
+
+.about-us img, .learn-more img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-us h1, .learn-more h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-us p, .learn-more p {
+    font-size: 16px;
+}
+
+/* Button Styling for About Us and Learn More Text */
+.section-btn {
+    display: flex;
+    background-color: #fbbf24;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 60px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.section-btn:hover {
+    background-color: #facc15;
+    transform: translateY(-5px);
+}
+
+.section-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section Styling */
+.about-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.about-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fbbf24;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+.center-content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 100px auto; /* Center the content with margin */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    margin-left: 500px;
+    margin-top: 300px; /* Space from the top */
+}
+
+/* Heading for About Us Section */
+.center-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fbbf24; /* Warm yellow */
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Style for the buttons under the 'Learn More' Section */
+.center-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center buttons */
+    gap: 20px;
+}
+
+/* Button Styling */
+.center-btn {
+    background-color: #fbbf24;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+}
+
+.center-btn:hover {
+    background-color: #facc15; /* Light yellow on hover */
+    transform: translateY(-5px); /* Lift effect */
+}
+
+.center-btn:active {
+    transform: translateY(2px); /* Slight press effect */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+/* Optional: Add a glowing effect when hovered for extra visual flair */
+.center-btn:hover {
+    box-shadow: 0 0 15px rgba(255, 189, 36, 0.7); /* Yellow glow effect */
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
+
+  <div class="sidebar" id="sidebar">
+    <div class="menu-icon" id="menu-toggle">
+      <img src="./assets/imgs/menu.png" alt="Menu Icon">
+    </div>
+
+    <div class="menu-items">
+      <a href="../page2/index.html" class="menu-btn">
+        <img src="./assets/imgs/home.png" class="icon" alt="Home Icon">
+        <span class="text">Home</span>
+      </a>
+
+      <div class="dropdown">
+        <button class="menu-btn" id="patients-btn"> 
+          <img src="./assets/imgs/patient.png" class="icon" alt="Patients Icon">
+          <span class="text">My Patients</span>
+        </button>
+        <div class="dropdown-content" id="patients-dropdown">
+          <a href="patient1.html" class="patient-btn">Patient 1</a>
+          <a href="patient2.html" class="patient-btn">Patient 2</a>
+        </div>
+      </div>
+
+      <a href="inbox.html" class="menu-btn">
+        <img src="./assets/imgs/inbox.png" class="icon" alt="Inbox Icon">
+        <span class="text">Inbox</span>
+      </a>
+
+      <a href="schedule.html" class="menu-btn">
+        <img src="./assets/imgs/calendar.png" class="icon" alt="Schedule Icon">
+        <span class="text">Schedule</span>
+      </a>
+
+      <a href="tasks.html" class="menu-btn">
+        <img src="./assets/imgs/task.png" class="icon" alt="Tasks Icon">
+        <span class="text">Tasks</span>
+      </a>
+
+      <a href="settings.html" class="menu-btn">
+        <img src="./assets/imgs/settings.png" class="icon" alt="Settings Icon">
+        <span class="text">Settings</span>
+      </a>
+    </div>
+
+    <a href="logout.html" class="logout-btn">
+      <img src="./assets/imgs/logout.png" class="icon" alt="Logout Icon">
+      <span class="text">Logout</span>
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="our-story">
+      <h2>Our Story / History</h2>
+      <p>Established to meet the growing need for accessible, high-quality healthcare in the heart of Manila, FEU Hospital has served the community with excellence and compassion since its founding. Located in Morayta, Manila, the hospital has long been a pillar of medical service and education, operating as the teaching and training hospital of Far Eastern University.</p>
+      <p>Over the years, FEU Hospital has evolved into a modern, full-service medical institution, offering a wide range of diagnostic, therapeutic, and inpatient services. With a commitment to innovation and patient-centered care, the hospital has consistently upgraded its facilities and services to meet international healthcare standards.</p>
+      <p>In support of its mission to continuously improve healthcare delivery, FEU Hospital implemented its Electronic Health Record (EHR) system—transforming the way patient information is stored, accessed, and managed. This digital shift enhances the quality, safety, and efficiency of care by providing healthcare professionals with real-time access to comprehensive patient data.</p>
+      <p>Guided by its legacy of service and education, FEU Hospital remains committed to combining compassionate care with technological advancement—ensuring better health outcomes for every patient it serves.</p>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
