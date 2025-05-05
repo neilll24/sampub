@@ -1,0 +1,280 @@
+/* General Body and Layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #f1f5f9;
+    background-image: url('../../../assets/imgs/a648ca9a-e5cd-4b33-bd6c-148a00f7aac3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    background-size: 2225px;
+}
+
+/* Dark Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2b3d1f; /* Dark color for the sidebar */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 20px; /* Add space between menu items */
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+    width: 70px;
+}
+
+.sidebar.collapsed .menu-btn .text,
+.sidebar.collapsed .dropdown-content {
+    display: none; /* Hide text and dropdown content when collapsed */
+}
+
+.sidebar.collapsed .menu-btn {
+    justify-content: center;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    margin-left: 25px;
+    padding: 8px;
+    gap: 10px; /* Space between each button */
+    background-color: #2b3d1f; /* Match sidebar background */
+    border-radius: 6px;
+}
+
+/* Make each patient a separate button */
+.patient-btn {
+    background-color: #fbbf24;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px; /* Padding for spacing */
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.3s ease;
+    margin-bottom: 10px; /* Space between patient buttons */
+}
+
+.patient-btn:hover {
+    background-color: #facc15;
+    transform: translateX(5px);
+}
+
+/* Hover Effects for Dropdown */
+.menu-btn:hover .dropdown-content {
+    display: flex; /* Show the dropdown content on hover */
+}
+
+/* Adjust Menu Button for Collapsed Sidebar */
+.sidebar.collapsed .menu-btn {
+    padding: 12px 15px; /* Keep padding same */
+    justify-content: center; /* Center the icon */
+    gap: 0; /* Remove gap between icon and text when collapsed */
+}
+
+/* Hide text for the 'My Patients' button in collapsed sidebar */
+.sidebar.collapsed #patients-btn .text {
+    display: none;
+}
+
+/* Keep dropdown content hidden when collapsed */
+.sidebar.collapsed .dropdown-content {
+    display: none; /* Ensure dropdown is hidden in collapsed state */
+}
+
+/* Adjust the icon size for consistency when collapsed */
+.sidebar.collapsed #patients-btn .icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Menu Button Styling */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    background-color: #fbbf24;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 60px; /* Add padding for better spacing */
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.3s ease;
+    gap: 15px; /* Add gap between the icon and text */
+    margin-bottom: 15px; /* Add space between each menu button */
+}
+
+.menu-btn:hover {
+    background-color: #facc15;
+    transform: translateX(5px);
+}
+
+.menu-btn .icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hover Effect for Menu Icon */
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* Dropdown Hover Effects */
+.dropdown-content a {
+    color: #2b3d1f;
+    text-decoration: none;
+    padding: 8px 0; /* Add padding to increase clickable area */
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    font-weight: bold;
+    background-color: #f0f0f0; /* Add background on hover */
+}
+
+/* Logout Button */
+.logout-btn {
+    margin-top: auto;
+    background-color: #556b2f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 15px; /* Add gap between the icon and text */
+}
+
+.logout-btn .icon {
+    margin-left: -3px;
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar.collapsed .logout-btn .text {
+    display: none;
+}
+
+/* Dropdown Button in Sidebar */
+#patients-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+#patients-btn .dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Position dropdown below the menu item */
+    left: 0;
+    background-color: #2b3d1f;
+    border-radius: 6px;
+    padding: 10px;
+    width: 180px;
+    z-index: 1;
+}
+
+/* Show dropdown content when the menu item is hovered */
+#patients-btn:hover .dropdown-content {
+    display: block;
+}
+
+/* Centering the container */
+.contact-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1); /* light transparent */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    color: white;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+    margin-left: 750px;
+    margin-top: 200px;
+}
+
+/* Contact Title */
+.contact-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #facc15;
+}
+
+/* Flex layout for each contact row */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.contact-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+.contact-item img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+}
+
+.contact-item p {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Medical History</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Georgia&display=swap");
+      body {
+        font-family: "Georgia", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f9f6db] min-h-screen p-2">
+    <header class="flex bg-[#273415] text-[#f9f6db]">
+      <!-- Menu Button as anchor link -->
+      <a href="../page2/index.html" aria-label="Menu" class="menu-btn p-3 flex flex-col justify-center space-y-1.5 text-[#273415] bg-[#f9f6db] border-none">
+        <span class="block w-8 h-1 bg-[#273415] rounded"></span>
+        <span class="block w-8 h-1 bg-[#273415] rounded"></span>
+        <span class="block w-8 h-1 bg-[#273415] rounded"></span>
+      </a>
+
+      <div class="flex items-center border-4 border-[#dba83a] p-2 mx-4 max-w-[160px]">
+        <img alt="Silhouette of person with shoulders and head in white on dark green background" class="w-full h-auto" height="150" src="https://storage.googleapis.com/a1aa/image/c0bf26ff-8b91-48e9-cf14-e7a1c72e622e.jpg" width="150"/>
+      </div>
+      <div class="flex flex-col justify-center flex-grow">
+        <div class="text-[18px] font-normal ml-2 mb-1">
+          123.45.6789
+        </div>
+        <h1 class="text-[32px] font-normal ml-2">
+          DIMAHULI, Berrieby Liss
+        </h1>
+      </div>
+    </header>
+
+    <nav class="bg-[#5f6c3d] text-[#f9f6db] text-[18px] font-normal flex flex-wrap px-4 py-1">
+      <a class="underline mr-4" href="./index.html">Profile</a>
+      <a class="underline mr-4" href="./overview.html">Overview</a>
+      <a class="underline mr-4" href="./timeline.html">Timeline</a>
+      <a class="underline mr-4" href="./health history.html">Health History</a>
+      <a class="underline mr-4" href="./doctors order.html">Doctor’s Order</a>
+      <a class="underline mr-4" href="./lab tests.html">Lab &amp; Diagnostic Tests</a>
+      <a class="underline" href="./notes.html">Notes</a>
+    </nav>
+
+    <main class="mt-4 mx-2 md:mx-4 border border-black">
+      <section class="bg-[#f9bb4d] border-b border-black p-2">
+        <h2 class="text-center font-extrabold text-[20px]">
+          Past Medical History
+        </h2>
+      </section>
+      <section class="grid grid-cols-1 md:grid-cols-2 border-t border-black">
+        <div class="border-r border-black p-3 bg-[#fff8e1]">
+          <p class="font-bold mb-2">
+            Chronic Illness:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-[16px]">
+            <li>N/A (Date of Diagnosis)</li>
+            <li>N/A (Date of Diagnosis)</li>
+          </ul>
+        </div>
+        <div class="p-3 bg-[#fff8e1]">
+          <p class="font-bold mb-2">
+            Allergies:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-[16px]">
+            <li>Drug – PENICILLIN</li>
+            <li>Environment – Peanuts, Dairy</li>
+            <li>Food – Dust</li>
+          </ul>
+        </div>
+      </section>
+      <section class="grid grid-cols-1 md:grid-cols-2 border-t border-black">
+        <div class="border-r border-black p-3 bg-[#fff8e1]">
+          <p class="font-bold mb-2">
+            Medication History:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-[16px]">
+            <li>
+              Current Medication
+              <ul class="list-disc list-inside ml-5 space-y-1">
+                <li>MEDICATION: Naproxen</li>
+                <li>ROUTE: Twice a day</li>
+                <li>DOSAGE: 500 mg oral</li>
+              </ul>
+            </li>
+            <li>
+              Past Medication
+              <ul class="list-disc list-inside ml-5 space-y-1">
+                <li>MEDICATION:</li>
+                <li>ROUTE:</li>
+                <li>DOSAGE</li>
+              </ul>
+            </li>
+            <li>
+              Supplements
+              <ul class="list-disc list-inside ml-5 space-y-1">
+                <li>TYPE OF SUPPLEMENT:</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="p-3 bg-[#fff8e1]">
+          <p class="font-bold mb-2">
+            Review of Systems (ROS):
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-[16px]">
+            <li>
+              Cardiovascular
+              <ul class="list-disc list-inside ml-5 space-y-1">
+                <li>Chest pain with exertion (Date of Diagnosis)</li>
+              </ul>
+            </li>
+            <li>
+              Respiratory
+              <ul class="list-disc list-inside ml-5 space-y-1">
+                <li>Shortness of Breath when exercising</li>
+              </ul>
+            </li>
+            <li>
+              Gastrointestinal
+              <ul class="list-disc list-inside ml-5 space-y-1">
+                <li>Frequent heartburn after meal intake</li>
+              </ul>
+            </li>
+            <li>
+              Neurologic
+              <ul class="list-disc list-inside ml-5 space-y-1">
+                <li>Occasional dizziness and headaches felt</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

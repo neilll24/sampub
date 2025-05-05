@@ -1,0 +1,91 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Inbox
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url("https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap");
+  </style>
+ </head>
+ <body class="min-h-screen bg-[url('https://placehold.co/1920x1080?text=Hospital+Campus+Background+Image')] bg-cover bg-center">
+  <header class="flex items-center bg-[#27340D] border-b-4 border-[#5B6B2F]">
+   <a aria-label="Menu" class="text-[#4A3F3F] text-4xl ml-4 mr-6 focus:outline-none" href="../page2/index.html" role="button" tabindex="0">
+    <i class="fas fa-bars">
+    </i>
+   </a>
+   <h1 class="text-white font-serif text-3xl font-normal" style="font-family: 'Times New Roman', serif">
+    INBOX
+   </h1>
+   <nav class="flex flex-1 justify-around border-t-4 border-[#5B6B2F]">
+    <a class="flex flex-col items-center text-[#F4B942] text-lg underline underline-offset-4 font-serif font-normal" href="./message1.html" style="font-family: 'Times New Roman', serif">
+     <i class="fas fa-comments text-5xl mb-1">
+     </i>
+     Messages
+    </a>
+    <a class="flex flex-col items-center text-[#F4B942] text-lg underline underline-offset-4 font-serif font-normal" href="./billings.html" style="font-family: 'Times New Roman', serif">
+     <i class="fas fa-hand-holding-usd text-5xl mb-1">
+     </i>
+     Billings
+    </a>
+    <a class="flex flex-col items-center text-[#F4B942] text-lg underline underline-offset-4 font-serif font-normal" href="./pharmacy.html" style="font-family: 'Times New Roman', serif">
+     <i class="fas fa-pills text-5xl mb-1">
+     </i>
+     Pharmacy
+    </a>
+   </nav>
+  </header>
+  <main class="max-w-7xl mx-auto mt-2 border border-black bg-[#FFFCDF] grid grid-cols-[280px_1fr] h-[calc(100vh-96px)]">
+   <section class="border-b border-r border-black flex flex-col">
+    <form class="p-4 border-b border-black">
+     <input class="w-full rounded-full border border-black bg-[#FFFCDF] px-6 py-2 italic text-lg font-serif placeholder:text-gray-600 focus:outline-none" placeholder="Search..." style="font-family: 'Times New Roman', serif" type="search"/>
+    </form>
+    <ul class="flex flex-col divide-y divide-black overflow-y-auto">
+     <li>
+      <a class="flex items-center gap-4 p-3 border-b border-black hover:bg-[#e6e3c6] focus:bg-[#e6e3c6] focus:outline-none" href="./message2.html" role="button" tabindex="0">
+       <img alt="Avatar of a man with brown hair wearing a suit and red tie" class="rounded-full" height="48" src="https://storage.googleapis.com/a1aa/image/e9dc2d09-d636-48c9-da05-34aad96686f6.jpg" width="48"/>
+       <div>
+        <p class="text-lg font-sans font-normal">
+         Dr. James
+        </p>
+        <p class="text-gray-400 text-sm font-sans font-light">
+         How is the condition of…
+        </p>
+       </div>
+      </a>
+     </li>
+     <li class="flex items-center gap-4 p-3 border-b border-black">
+      <img alt="Avatar of a woman with brown hair and purple background" class="rounded-full" height="48" src="https://storage.googleapis.com/a1aa/image/f2b9d62d-aab0-47ed-f867-b40edeca251a.jpg" width="48"/>
+      <div>
+       <p class="text-lg font-sans font-normal">
+        Nurse Santos
+       </p>
+       <p class="text-gray-400 text-sm font-sans font-light">
+        Yes, I will proceed to the…
+       </p>
+      </div>
+     </li>
+     <li class="flex items-center gap-4 p-3 border-b border-black">
+      <img alt="Avatar of a woman with brown hair wearing a red shirt" class="rounded-full" height="48" src="https://storage.googleapis.com/a1aa/image/b81a1dc7-10be-47c5-e15f-ce3358af0c10.jpg" width="48"/>
+      <div>
+       <p class="text-lg font-sans font-normal">
+        Dr. Felisha
+       </p>
+       <p class="text-gray-400 text-sm font-sans font-light">
+        Here is my order for patient…
+       </p>
+      </div>
+     </li>
+    </ul>
+    <div class="flex-grow border-t border-black">
+    </div>
+   </section>
+   <section>
+   </section>
+  </main>
+ </body>
+</html>

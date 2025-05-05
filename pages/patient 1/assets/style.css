@@ -1,0 +1,131 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #fffde0;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
+  
+  .header {
+    background-color: #243512;
+    color: #f0f8e6;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 10px;
+  }
+  
+  .menu-btn {
+    background-color: #fffde0;
+    color: #243512;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profile-pic {
+    border: 4px solid #fbbf24;
+    width: 96px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .profile-pic img {
+    width: 96px;
+    height: 112px;
+    object-fit: contain;
+  }
+  
+  .id-number {
+    font-size: 0.9rem;
+    margin-right: 20px;
+    user-select: none;
+  }
+  
+  .patient-name {
+    font-size: 1.8rem;
+    font-weight: normal;
+    user-select: none;
+  }
+  
+  .navigation {
+    background-color: #5a6e3a;
+    color: #f0f8e6;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .navigation a {
+    color: #f0f8e6;
+    text-decoration: underline;
+  }
+  
+  .navigation a:not(:first-child) {
+    text-decoration: none;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    max-width: 1280px;
+    margin: auto;
+  }
+  
+  .card {
+    background-color: #fffde0;
+    border: 1px solid #000;
+    padding: 16px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .section-title {
+    background-color: #fbbf24;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .subsection h3 {
+    background-color: #fbbf24;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: normal;
+    display: inline-block;
+  }
+  
+  .text-content {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .text-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .text-content ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+  

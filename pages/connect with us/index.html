@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quality and Safety</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
+
+  <div class="sidebar" id="sidebar">
+    <div class="menu-icon" id="menu-toggle">
+      <img src="./assets/imgs/menu.png" alt="Menu Icon">
+    </div>
+
+    <div class="menu-items">
+      <a href="../page2/index.html" class="menu-btn">
+        <img src="./assets/imgs/home.png" class="icon" alt="Home Icon">
+        <span class="text">Home</span>
+      </a>
+
+      <div class="dropdown">
+        <button class="menu-btn" id="patients-btn"> 
+          <img src="./assets/imgs/patient.png" class="icon" alt="Patients Icon">
+          <span class="text">My Patients</span>
+        </button>
+        <div class="dropdown-content" id="patients-dropdown">
+          <a href="patient1.html" class="patient-btn">Patient 1</a>
+          <a href="patient2.html" class="patient-btn">Patient 2</a>
+        </div>
+      </div>
+
+      <a href="inbox.html" class="menu-btn">
+        <img src="./assets/imgs/inbox.png" class="icon" alt="Inbox Icon">
+        <span class="text">Inbox</span>
+      </a>
+
+      <a href="schedule.html" class="menu-btn">
+        <img src="./assets/imgs/calendar.png" class="icon" alt="Schedule Icon">
+        <span class="text">Schedule</span>
+      </a>
+
+      <a href="tasks.html" class="menu-btn">
+        <img src="./assets/imgs/task.png" class="icon" alt="Tasks Icon">
+        <span class="text">Tasks</span>
+      </a>
+
+      <a href="settings.html" class="menu-btn">
+        <img src="./assets/imgs/settings.png" class="icon" alt="Settings Icon">
+        <span class="text">Settings</span>
+      </a>
+    </div>
+
+    <a href="logout.html" class="logout-btn">
+      <img src="./assets/imgs/logout.png" class="icon" alt="Logout Icon">
+      <span class="text">Logout</span>
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="contact-container">
+    <h2 class="contact-title">Connect With Us</h2>
+  
+    <div class="contact-item">
+      <img src="./assets/imgs/email.png" alt="Email Icon">
+      <p>tamsehealth@gmail.com</p>
+    </div>
+  
+    <div class="contact-item">
+      <img src="./assets/imgs/mobile.png" alt="Phone Icon">
+      <p>0975 897 4353</p>
+    </div>
+  
+    <div class="contact-item">
+      <img src="./assets/imgs/phone.png" alt="Landline Icon">
+      <p>02-911505</p>
+    </div>
+  </div>
+  
+
+  <script src="./script.js"></script>
+</body>
+</html>

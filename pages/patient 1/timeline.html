@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Medical Record</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="./assets/timeline.css" rel="stylesheet"/>
+</head>
+<body class="bg-[#f7f7d9] font-[Times New Roman]">
+  <header class="header flex flex-wrap items-center bg-[#24330f] text-[#f7f7d9]">
+    <!-- Menu Button as anchor link -->
+    <a href="../page2/index.html" aria-label="Menu" class="menu-btn">
+      <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Logo Section -->
+    <div class="logo-container border-4 border-[#d9a63a] m-2 w-24 h-28 flex justify-center items-center">
+      <img class="logo w-24 h-28 object-contain" alt="White silhouette of a person on dark green background" src="https://storage.googleapis.com/a1aa/image/926d833d-c415-4af0-f552-6a951023bc79.jpg"/>
+    </div>
+
+    <!-- Patient Info Section -->
+    <h1 class="patient-name flex-1 text-xl font-semibold ml-2">
+      DIMAHULI, Berrieby Liss
+    </h1>
+    <div class="patient-info flex space-x-6 mr-4 text-lg font-normal">
+      <span>30</span>
+      <span>Female</span>
+      <span>10/13/1994</span>
+      <span>123.45.6789</span>
+    </div>
+  </header>
+
+  <nav class="nav bg-[#5a6e2a] text-[#f7f7d9] text-base font-normal px-4 py-1 flex flex-wrap gap-2">
+    <a href="./index.html">Profile</a>
+    <a href="./overview.html">Overview</a>
+    <a href="./timeline.html">Timeline</a>
+    <a href="./health history.html">Health History</a>
+    <a href="./doctors order.html">Doctor’s Order</a>
+    <a href="./lab tests.html">Lab & Diagnostic Tests</a>
+    <a href="./notes.html">Notes</a>
+  </nav>
+
+  <main class="main-content p-4">
+    <table class="record-table w-full border border-black border-collapse text-sm">
+      <thead>
+        <tr class="bg-[#f7c25a]">
+          <th class="border border-black px-2 py-1 font-bold text-left">Date/Time</th>
+          <th class="border border-black px-2 py-1 font-bold text-left">Procedure</th>
+          <th class="border border-black px-2 py-1 font-bold text-left">Description</th>
+          <th class="border border-black px-2 py-1 font-bold text-left">Provider/Location</th>
+          <th class="border border-black px-2 py-1 font-bold text-left">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-black px-2 py-1 align-top">03/27/2025 <br/> - 08:00 am</td>
+          <td class="border border-black px-2 py-1 align-top">Initial Consultation</td>
+          <td class="border border-black px-2 py-1 align-top">Patient complained of having a headache with a pain scale of 7/10</td>
+          <td class="border border-black px-2 py-1 align-top">Dr. James / NRH Bldg. room 514</td>
+          <td class="border border-black px-2 py-1 align-top">Doctor ordered 500 mg paracetamol TID for headache and schedule next visit on 03/29/2025</td>
+        </tr>
+        <tr>
+          <td class="border border-black px-2 py-1"></td>
+          <td class="border border-black px-2 py-1"></td>
+          <td class="border border-black px-2 py-1"></td>
+          <td class="border border-black px-2 py-1"></td>
+          <td class="border border-black px-2 py-1"></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

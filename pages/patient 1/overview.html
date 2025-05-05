@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patient Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/overview.css" />
+  </head>
+  <body class="bg-[#FEFDE3] m-0 p-0 font-serif">
+    <div class="max-w-full">
+      <!-- Top Bar -->
+      <div class="flex items-center bg-[#243214] text-white px-4 py-3">
+        <a href="../page2/index.html" aria-label="Menu" class="menu-btn mr-4">
+          <i class="fas fa-bars fa-lg"></i>
+        </a>
+        <div class="border-4 border-[#EFB94B] w-[120px] h-[120px] flex items-center justify-center mr-4 shrink-0">
+          <img src="https://storage.googleapis.com/a1aa/image/bd87172f-c721-47f2-3a6c-f6d166803db9.jpg" alt="Profile" class="w-[100px] h-[100px]" />
+        </div>
+        <h1 class="text-[24px] flex-grow leading-[1.2]">DIMAHULI, Berrieby Liss</h1>
+        <div class="flex flex-wrap gap-4 text-[18px]">
+          <span>30</span>
+          <span>Female</span>
+          <span>10/13/1994</span>
+          <span>123.45.6789</span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="bg-[#6B7A3B] px-4 py-2 flex flex-wrap gap-4 text-white text-[16px] underline underline-offset-2 decoration-1">
+        <a class="hover:text-[#EFB94B]" href="./index.html">Profile</a>
+        <a class="hover:text-[#EFB94B]" href="./overview.html">Overview</a>
+        <a class="hover:text-[#EFB94B]" href="./timeline.html">Timeline</a>
+        <a class="hover:text-[#EFB94B]" href="./health history.html">Health History</a>
+        <a class="hover:text-[#EFB94B]" href="./doctors order.html">Doctor’s Order</a>
+        <a class="hover:text-[#EFB94B]" href="./lab tests.html">Lab & Diagnostic Tests</a>
+        <a class="hover:text-[#EFB94B]" href="./notes.html">Notes</a>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Left Column -->
+        <section class="info-card">
+          <h2 class="section-title">Present Illness</h2>
+          <ul class="list-disc list-inside mb-3">
+            <li>Bronchitis</li>
+            <li>Esophageal reflux</li>
+            <li>Benign essential hypertension</li>
+            <li>Asthma</li>
+          </ul>
+          <a href="#" class="info-link">Show all active</a>
+          <a href="#" class="info-link">Show resolved</a>
+
+          <h2 class="section-title mt-4">Health History</h2>
+          <ul class="list-disc list-inside">
+            <li>Surgery
+              <ul class="ml-5 list-disc list-inside">
+                <li>Appendectomy</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Middle Column -->
+        <section class="info-card">
+          <h2 class="section-title">Allergies</h2>
+          <p class="font-bold mb-1">Drug allergies</p>
+          <ul class="list-disc list-inside mb-2">
+            <li>Penicillin</li>
+          </ul>
+          <a href="#" class="info-link">Show food allergies</a>
+          <a href="#" class="info-link">Show environment allergies</a>
+
+          <h2 class="section-title mt-4">Medications</h2>
+          <ul class="list-disc list-inside mb-2">
+            <li>Naproxen
+              <ul class="ml-5 list-disc list-inside">
+                <li>500 mg oral tablet 2x a day</li>
+              </ul>
+            </li>
+            <li>Lisinopril
+              <ul class="ml-5 list-disc list-inside">
+                <li>500 mg oral tablet</li>
+              </ul>
+            </li>
+            <li>Flexeril (cyclobenzaprine)
+              <ul class="ml-5 list-disc list-inside">
+                <li>5 g oral tablet</li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#" class="info-link">Show past medications</a>
+        </section>
+
+        <!-- Right Column -->
+        <section class="info-card">
+          <h2 class="section-title">Recent Vitals</h2>
+          <ul class="list-disc list-inside mb-3">
+            <li>Temp: 37</li>
+            <li>BP: 120/70</li>
+            <li>Pulse: 92 bpm</li>
+            <li>RR: 17 cpm</li>
+            <li>O2 Sat: 95%</li>
+            <li>Pain: <strong>7/10</strong></li>
+          </ul>
+
+          <h2 class="section-title mt-4">Encounters</h2>
+          <p class="mb-1">Today, Mar. 27</p>
+          <ul class="list-disc list-inside mb-2">
+            <li>Headache</li>
+          </ul>
+          <p>Mar. 29
+            <a href="#" class="info-link inline"> (Scheduled visit)</a>
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

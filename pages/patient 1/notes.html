@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Patient Notes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+      body {
+        font-family: 'Times New Roman', serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#fefbd8] m-0 p-0">
+    <header class="flex flex-wrap items-center bg-[#2a3712] text-white">
+      <!-- Menu Button as anchor link -->
+      <a
+        href="../page2/index.html"
+        aria-label="Menu"
+        class="p-4 text-3xl text-[#2a3712] bg-[#fefbd8]"
+      >
+        <i class="fas fa-bars"></i>
+      </a>
+
+      <div
+        class="flex items-center border-4 border-[#fbbf24] m-2 p-2 max-w-[160px]"
+      >
+        <img
+          alt="White silhouette of a person on dark green background inside a golden border"
+          class="w-full h-auto"
+          height="140"
+          src="https://storage.googleapis.com/a1aa/image/673f628c-a089-42a9-784a-40f1be74f76c.jpg"
+          width="120"
+        />
+      </div>
+      <div class="flex-1 p-2">
+        <div class="text-lg font-semibold mb-1">123.45.6789</div>
+        <h1 class="text-4xl font-normal">DIMAHULI, Berrieby Liss</h1>
+      </div>
+    </header>
+
+    <nav
+      class="bg-[#5a623d] text-[#fefbd8] text-lg font-normal flex flex-wrap px-4 py-1 select-none"
+    >
+      <a class="underline mr-4" href="./index.html">Profile</a>
+      <a class="underline mr-4" href="./overview.html">Overview</a>
+      <a class="underline mr-4" href="./timeline.html">Timeline</a>
+      <a class="underline mr-4" href="./health history.html">Health History</a>
+      <a class="underline mr-4" href="./doctors order.html">Doctor’s Order</a>
+      <a class="underline mr-4" href="./lab tests.html">Lab & Diagnostic Tests</a>
+      <a class="underline" href="./notes.html">Notes</a>
+    </nav>
+
+    <main
+      class="max-w-[900px] mx-auto mt-4 border border-black grid grid-cols-1 md:grid-cols-3 gap-0"
+    >
+      <section class="md:col-span-2 border-r border-black bg-[#fefbd8] p-4">
+        <h2 class="bg-[#fbbf24] font-extrabold text-lg p-2 mb-2">
+          Doctor’s Progress Notes
+        </h2>
+        <div class="flex justify-between mb-2 text-base">
+          <div>Date/Time: 4/26/2025</div>
+          <div>8:00 AM</div>
+        </div>
+        <div class="mb-4 text-base">Doctor: Dr. James Ejercito, Phd</div>
+        <p class="mb-4 text-base leading-relaxed">
+          Patient reports improved energy levels but still experiencing
+          occasional shortness of breath on exertion. Denies chest pain,
+          dizziness, or palpitations. Appetite good, no weight loss.
+        </p>
+        <div class="text-base mb-1">Assessment:</div>
+        <ul class="list-disc list-inside mb-4 text-base">
+          <li>
+            Improving dyspnea, likely secondary to recent pneumonia (resolving).
+          </li>
+          <li>No new concerning findings.</li>
+        </ul>
+        <div class="text-base mb-1">Plan:</div>
+        <ul class="list-disc list-inside text-base">
+          <li>Continue current antibiotic course for 3 more days.</li>
+          <li>Encourage ambulation as tolerated.</li>
+        </ul>
+      </section>
+
+      <section class="bg-[#fefbd8] p-4">
+        <h2 class="bg-[#fbbf24] font-extrabold text-lg p-2 mb-2">
+          Nurse’s Notes
+        </h2>
+        <div class="flex justify-between mb-2 text-base">
+          <div>Date/Time: 4/26/2025</div>
+          <div>7:45 AM</div>
+        </div>
+        <div class="mb-4 text-base">Nurse: Kaye Zhandra Santos, RN</div>
+        <ul class="list-disc list-inside text-base leading-relaxed">
+          <li>Patient awake, alert, and oriented.</li>
+          <li>
+            Assisted out of bed to chair with minimal assistance. Tolerated
+            activity well without signs of distress.
+          </li>
+          <li>Lung sounds clear, non–labored breathing.</li>
+          <li>
+            Will continue to monitor respiratory status and encourage mobility.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
